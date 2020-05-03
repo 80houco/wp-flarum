@@ -1,0 +1,44 @@
+{
+	"name": "80houco/wp-flarum",
+	"description": "SSO for Flarum",
+	"type": "flarum-extension",
+	"keywords": [
+		"authentication"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Maicol Battistini",
+			"email": "maicolbattistini@live.it"
+		},
+		{
+			"name": "Fabian Wüthrich",
+			"email": "fabian.wuethrich@outlook.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/80houco/wp-flarum/issues",
+		"source": "https://github.com/80houco/wp-flarum"
+	},
+	"require": {
+		"flarum/core": ">=0.1.0-beta.10 <0.1.0-beta.13",
+		"fof/components": ">=0.1.0",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Maicol07\\SSO\\": "src/"
+		}
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "SSO",
+			"icon": {
+				"name": "fas fa-sign-in-alt"
+			}
+		},
+		"flagrow": {
+			"discuss": "https://discuss.flarum.org/d/5052-single-sign-on/"
+		}
+	}
+}
